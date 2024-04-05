@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-xs-12">
+                <div class="card">
+                    <img class="card-img" src="img/img1.jpg" alt="Music Cover">
+                    <h4 id="music-title">...</h4>
+                    <div class="description">
+                        <div class="row">
+                            <div class="left col-md-4">
+                                <i class="fa-solid fa-shuffle"></i><!--  -->
+                            </div>
+                            <div class="center col-md-4">
+                                <i class="fa-regular fa-heart fa-heart-regular"></i>
+                                <i class="fa-solid fa-heart fa-heart-solid"></i>
+                            </div>
+                            <div class="right col-md-4">
+                                <i class="fa-solid fa-volume-high"></i>
+                                <i class="fa-solid fa-volume-xmark"></i>
+                            </div>
+                        </div>
+                        <input type="range" id="audio-length" min="0" max="0">
+                        <audio id="audio">
+                            <source src="#" type="audio/mp3">
+                        </audio>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6" id="time-start">
+                                <h6 id="time-length">0:00</h6>
+                            </div>
+                            <div class="col-md-6 col-xs-6" id="time-end">
+                                <h6 id="time-length">0:00</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-4 controlls">
+                                <i class="fa-solid fa-backward"></i>
+                            </div>
+                            <div class="col-md-4 col-xs-4 controlls">
+                                <i class="fa-solid fa-play"></i>
+                                <i class="fa-solid fa-pause"></i>
+                            </div>
+                            <div class="col-md-4 col-xs-4 controlls">
+                                <i class="fa-solid fa-forward"></i>
+                            </div>
+                        </div>
+                    </div><!-- description -->
+                </div><!-- card -->
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

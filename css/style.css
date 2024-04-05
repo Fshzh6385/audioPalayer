@@ -1,0 +1,83 @@
+
+body{
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+.container img {
+    border-radius: 5%;
+    width: 100%;
+}
+
+.mt-2 {
+    padding-top: 2%;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 20px 30px;
+    border-radius: 5%;
+    background-color: #fff;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+#time-start {
+    text-align: start;
+    margin-top: -10px;
+}
+
+#time-end {
+    text-align: end;
+    margin-top: -10px;
+}
+
+h6 {
+    font-weight: 300;
+}
+
+.center,
+.controlls {
+    text-align: center !important;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.left {
+    text-align: start;
+    cursor: pointer;
+}
+
+.right {
+    text-align: end;
+    cursor: pointer;
+}
+
+
+.fa-play,
+.fa-pause,
+.fa-heart-regular,
+.fa-heart-solid{
+    transition: all 1s ease-in-out;
+}
+
+.fa-play{ margin-top: 5px; }
+.fa-pause{ display: none; margin-top: 5px;}
+
+.fa-heart-regular{ margin-top: 5px; }
+.fa-heart-solid{ display: none; margin-top: 5px;}
+
+.fa-volume-high{ margin-top: 5px; }
+.fa-volume-xmark{ display: none; margin-top: 5px; }
+
+#audio-length{
+    margin-top: 10px;
+}
